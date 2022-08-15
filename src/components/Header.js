@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import logo from "../components/images/logo-marvel.png";
 
-const Header = () => {
+const Header = ({ token, setUser }) => {
   const navigate = useNavigate();
   return (
     <header className="header">
@@ -18,13 +18,26 @@ const Header = () => {
         <button>favoris</button>
       </div>
       <div className="authentificate">
-        <Link to="/login">
-          <button>se connecter</button>
-        </Link>
+        {token === null ? (
+          <>
+            <Link to="/login">
+              <button>se connecter</button>
+            </Link>
 
-        <Link to="/signup">
-          <button>créer un compte</button>
-        </Link>
+            <Link to="/signup">
+              <button>créer un compte</button>
+            </Link>
+          </>
+        ) : (
+          <button
+            onClick={() => {
+              setUser(null);
+              navigate("/");
+            }}
+          >
+            Se déconnecter
+          </button>
+        )}
       </div>
     </header>
   );

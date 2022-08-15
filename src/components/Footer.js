@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <div className="footer">
       <img src={batman} alt="photo de baman" />
-      <p>Marvel par Jules Sannequin eleve du Reacteur</p>
+      <p>Marvel par Jules Sannequin élève du Reacteur</p>
     </div>
   );
 };
