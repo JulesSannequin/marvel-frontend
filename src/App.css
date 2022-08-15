@@ -163,3 +163,35 @@ button {
   color: white;
   box-shadow: 4px 4px 4px black;
 }
+
+.login-form {
+  background-color:#6861FF;
+  height: 85vh;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-form input {
+  display: flex;
+  margin-top: 3vh;
+  height: 4vh;
+  width: 50vh;
+  border-radius: 5px;
+  box-shadow: 4px 4px 4px black;
+  border: none;
+  text-align: center;
+}
+
+.login-form button {
+  height: 4vh;
+  width: 50vh;
+  margin-top:3vh;
+  border-radius: 5px;
+  border: none;
+  background-color: #ED171E;
+  color: white;
+  box-shadow: 4px 4px 4px black;
+}

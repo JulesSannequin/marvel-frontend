@@ -18,7 +18,10 @@ const Header = () => {
         <button>favoris</button>
       </div>
       <div className="authentificate">
-        <button>se connecter</button>
+        <Link to="/login">
+          <button>se connecter</button>
+        </Link>
+
         <Link to="/signup">
           <button>créer un compte</button>
         </Link>

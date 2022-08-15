@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import Characters from "./components/Characters";
 import Comics from "./components/Comics";
 import Signup from "./components/Signup";
+import Login from "./components/Login";
 
 function App() {
   const [token, setToken] = useState(Cookies.get("userToken") || null);
@@ -32,6 +33,7 @@ function App() {
           <Route path="/characters" element={<Characters />} />
           <Route path="/comics" element={<Comics />} />
           <Route path="/signup" element={<Signup setUser={setUser} />} />
+          <Route path="/login" element={<Login setUser={setUser} />} />
         </Routes>
         <Footer />
       </Router>
