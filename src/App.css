@@ -199,3 +199,77 @@ button {
 .character-id {
   color: white;
 }
+
+@media (max-width: 576px) {
+  .header {
+    height: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .header img {
+    width: 8rem;
+  }
+
+  .header-right button {
+    width: 5rem;
+    height: 2rem;
+    font-size: 10px;
+    text-align: center;
+    padding: 0;
+  }
+
+  .authentificate button {
+    width: 5rem;
+    height: 2rem;
+    font-size: 10px;
+    text-align: center;
+    padding: 0;
+  }
+
+  .main img {
+    object-fit: cover;
+    height: 82vh;
+  }
+
+  .footer img {
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+  }
+
+  .footer p {
+    font-size: 10px;
+  }
+
+  .login-form {
+    height: 82vh;
+  }
+
+  .login-form input {
+    width: 15rem;
+    height: 2rem;
+  }
+
+  .login-form button {
+    width: 15rem;
+    height: 2rem;
+  }
+
+  .form-signup {
+    height: 82vh;
+  }
+
+  .form-signup input {
+    width: 15rem;
+    height: 2rem;
+  }
+
+  .form-signup button {
+    width: 15rem;
+    height: 2rem;
+  }
+
+  
+}

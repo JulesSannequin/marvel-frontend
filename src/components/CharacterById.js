@@ -31,8 +31,6 @@ const CharacterById = () => {
             <div className="maincharactId">
               {data.comics.map((item, index) => {
                 console.log(item);
-                const picture =
-                  item.thumbnail.path + "." + item.thumbnail.extension;
 
                 return (
                   <>
