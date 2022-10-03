@@ -273,3 +273,83 @@ button {
 
   
 }
+
+@media (max-width : 768px) {
+ .header-right {
+ 
+  width: 40rem;
+  margin-left: 2rem;
+ }
+
+  .header-right button {
+    width: 5rem;
+    height: 2rem;
+    padding: 0;
+    font-size: 12px;
+    flex-wrap: nowrap;
+    }
+
+    .authentificate button {
+      width: 8rem;
+      height: 2rem;
+      font-size: 12px;
+      margin-bottom: 1rem;
+      padding: 0;
+     
+    }
+
+    .main {
+      height: 88vh;
+    }
+
+    .main img {
+      object-fit: cover;
+      height: 100%;
+    }
+
+    .login-form {
+      height: 88vh;
+    }
+
+    .form-signup {
+      height: 88vh;
+    }
+}
+
+@media (max-width: 820px) {
+  .header-right {
+    width: 45rem;
+    margin-left: 2rem;
+  }
+
+  .header-right button {
+    width: 6rem;
+    height: 2.5rem;
+    font-size: 14px;
+    padding: 0;
+    
+  }
+
+  .authentificate button {
+    padding: 0;
+    height: 2.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .main {
+   height: 90vh;
+  }
+
+  .main img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .login-form {
+    height: 90vh;
+  }
+
+  .form-signup {
+    height: 90vh;
+  }
+}
