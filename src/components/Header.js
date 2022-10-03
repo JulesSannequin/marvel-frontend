@@ -18,16 +18,16 @@ const Header = ({ token, setUser }) => {
         <button>favoris</button>
       </div>
       <div className="authentificate">
-        {token === null ? (
-          <>
-            <Link to="/login">
-              <button>se connecter</button>
-            </Link>
+        {/* {token === null ? (
+          <> */}
+        <Link to="/login">
+          <button>se connecter</button>
+        </Link>
 
-            <Link to="/signup">
-              <button>créer un compte</button>
-            </Link>
-          </>
+        <Link to="/signup">
+          <button>créer un compte</button>
+        </Link>
+        {/* </>
         ) : (
           <button
             onClick={() => {
@@ -37,7 +37,7 @@ const Header = ({ token, setUser }) => {
           >
             Se déconnecter
           </button>
-        )}
+        )} */}
       </div>
     </header>
   );

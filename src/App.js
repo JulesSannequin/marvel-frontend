@@ -9,6 +9,7 @@ import Characters from "./components/Characters";
 import Comics from "./components/Comics";
 import Signup from "./components/Signup";
 import Login from "./components/Login";
+import CharacterById from "./components/CharacterById";
 
 function App() {
   const [token, setToken] = useState(Cookies.get("userToken") || null);
@@ -34,6 +35,10 @@ function App() {
           <Route path="/comics" element={<Comics />} />
           <Route path="/signup" element={<Signup setUser={setUser} />} />
           <Route path="/login" element={<Login setUser={setUser} />} />
+          <Route
+            path="/characters/:characterId"
+            element={<CharacterById setUser={setUser} />}
+          />
         </Routes>
         <Footer />
       </Router>

@@ -26,7 +26,7 @@ const Signup = ({ setUser }) => {
         }
       );
       if (response.data) {
-        console.log("Bravo tu viens de créer un compte");
+        console.log("ici ==>", response.data);
         setUser(response.data.token);
         navigate("/");
       }

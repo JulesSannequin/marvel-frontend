@@ -195,3 +195,7 @@ button {
   color: white;
   box-shadow: 4px 4px 4px black;
 }
+
+.character-id {
+  color: white;
+}
